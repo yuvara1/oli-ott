@@ -1,0 +1,153 @@
+.upload-container {
+     max-width: 900px;
+     margin: 0 auto;
+     padding: 32px 16px;
+}
+
+.upload-title {
+     font-size: 2rem;
+     font-weight: bold;
+     margin-bottom: 24px;
+     color: #222;
+}
+
+.upload-label {
+     display: block;
+     font-weight: 500;
+     margin-bottom: 8px;
+     color: #444;
+}
+
+.upload-input,
+.upload-textarea {
+     width: 100%;
+     padding: 10px 12px;
+     border: 1px solid #ccc;
+     border-radius: 6px;
+     margin-bottom: 16px;
+     font-size: 1rem;
+     background: #fff;
+     color: #222;
+     box-sizing: border-box;
+     transition: border-color 0.2s;
+}
+
+.upload-input:focus,
+.upload-textarea:focus {
+     border-color: #e50914;
+     outline: none;
+}
+
+.dropzone {
+     border: 2px dashed #888;
+     border-radius: 8px;
+     padding: 2rem;
+     text-align: center;
+     color: #888;
+     background: #fafafa;
+     cursor: pointer;
+     margin: 1rem 0;
+     transition: background-color 0.3s ease;
+}
+
+.dropzone:hover,
+.dropzone:focus {
+     background: #f0f0f0;
+     border-color: #e50914;
+     color: #e50914;
+}
+
+.upload-preview-img {
+     width: 180px;
+     border-radius: 8px;
+     margin-bottom: 16px;
+     object-fit: cover;
+     background: #000;
+}
+
+.upload-preview-video {
+     width: 180px;
+     border-radius: 8px;
+     margin-bottom: 16px;
+     background: #000;
+}
+
+.upload-main-video-preview {
+     width: 100%;
+     max-width: 900px;
+     margin: 0 auto;
+     position: relative;
+     border-radius: 8px;
+     background: #000;
+}
+
+.upload-progress-overlay {
+     position: absolute;
+     left: 0;
+     right: 0;
+     bottom: 0;
+     background: rgba(0, 0, 0, 0.7);
+     color: #fff;
+     width: 100%;
+     text-align: center;
+     padding: 8px;
+     border-bottom-left-radius: 8px;
+     border-bottom-right-radius: 8px;
+}
+
+.upload-progress-bar-bg {
+     height: 6px;
+     background: #444;
+     border-radius: 3px;
+     margin-top: 4px;
+     overflow: hidden;
+}
+
+.upload-progress-bar {
+     height: 100%;
+     background: #e50914;
+     transition: width 0.3s;
+}
+
+.upload-mux-player {
+     width: 100%;
+     max-width: 900px;
+     margin: 32px auto;
+     border-radius: 8px;
+     aspect-ratio: 16/9;
+}
+
+.upload-btn {
+     padding: 12px 32px;
+     font-size: 18px;
+     border-radius: 6px;
+     background: #e50914;
+     color: #fff;
+     border: none;
+     margin: 24px 0;
+     cursor: pointer;
+     transition: background 0.2s, color 0.2s;
+}
+
+.upload-btn:disabled {
+     background: #888;
+     color: #eee;
+     cursor: not-allowed;
+}
+
+@media (max-width: 600px) {
+     .upload-container {
+          padding: 8px 2px;
+     }
+
+     .upload-title {
+          font-size: 1.2rem;
+     }
+
+     .upload-mux-player {
+          min-width: 100vw;
+          max-width: 100vw;
+          margin: 0;
+          border-radius: 0;
+     }
+}
